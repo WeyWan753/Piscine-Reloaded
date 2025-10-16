@@ -6,13 +6,13 @@
 /*   By: pola <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 10:02:22 by pola              #+#    #+#             */
-/*   Updated: 2025/10/16 16:42:25 by wabin-wa         ###   ########.fr       */
+/*   Updated: 2025/10/16 16:58:18 by wabin-wa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_purchar(char c);
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
