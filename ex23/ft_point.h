@@ -6,13 +6,13 @@
 /*   By: pola <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 11:49:38 by pola              #+#    #+#             */
-/*   Updated: 2025/10/16 11:53:23 by pola             ###   ########.fr       */
+/*   Updated: 2025/10/16 16:11:42 by wabin-wa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_POINT_H
 # define FT_POINT_H
-typedef struct
+typedef struct point
 {
 	int	x;
 	int	y;

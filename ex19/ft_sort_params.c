@@ -6,7 +6,7 @@
 /*   By: pola <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 10:46:41 by pola              #+#    #+#             */
-/*   Updated: 2025/10/16 11:12:48 by pola             ###   ########.fr       */
+/*   Updated: 2025/10/16 16:10:01 by wabin-wa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,10 @@ void	ft_putstr(char *str)
 {
 	while (*str)
 	{
-		write(1, str, 1);
+		ft_putchar(*str);
 		str++;
 	}
-	write(1, "\n", 1);
+	ft_putchar('\n');
 }
 
 int	main(int argc, char **argv)

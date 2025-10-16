@@ -6,7 +6,7 @@
 /*   By: pola <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 10:32:32 by pola              #+#    #+#             */
-/*   Updated: 2025/10/16 10:38:31 by pola             ###   ########.fr       */
+/*   Updated: 2025/10/16 16:09:21 by wabin-wa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ int	main(int argc, char **argv)
 	{
 		while (*argv[i])
 		{
-			write(1, argv[i], 1);
+			ft_putchar(*argv[i]);
 			argv[i]++;
 		}
-		write(1, "\n", 1);
+		ft_putchar('\n');
 		i++;
 	}
 }
