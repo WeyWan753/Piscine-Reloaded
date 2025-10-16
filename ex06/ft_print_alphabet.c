@@ -6,11 +6,16 @@
 /*   By: pola <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 21:59:18 by pola              #+#    #+#             */
-/*   Updated: 2025/10/16 16:05:47 by wabin-wa         ###   ########.fr       */
+/*   Updated: 2025/10/16 16:20:11 by wabin-wa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 void	ft_print_alphabet(void)
 {
