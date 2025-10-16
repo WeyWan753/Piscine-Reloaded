@@ -6,12 +6,13 @@
 /*   By: wabin-wa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 17:11:54 by wabin-wa          #+#    #+#             */
-/*   Updated: 2025/10/16 17:11:58 by wabin-wa         ###   ########.fr       */
+/*   Updated: 2025/10/16 17:20:41 by wabin-wa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_POINT_H
 # define FT_POINT_H
+
 typedef struct s_point
 {
 	int	x;
