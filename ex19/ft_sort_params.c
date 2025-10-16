@@ -6,11 +6,13 @@
 /*   By: pola <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 10:46:41 by pola              #+#    #+#             */
-/*   Updated: 2025/10/16 16:10:01 by wabin-wa         ###   ########.fr       */
+/*   Updated: 2025/10/16 16:43:15 by wabin-wa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_putchar(char c);
 
 int	ft_strcmp(char *s1, char *s2)
 {

@@ -6,11 +6,13 @@
 /*   By: pola <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 22:49:21 by pola              #+#    #+#             */
-/*   Updated: 2025/10/16 16:06:52 by wabin-wa         ###   ########.fr       */
+/*   Updated: 2025/10/16 16:41:52 by wabin-wa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_putchar(char c);
 
 void	ft_is_negative(int n)
 {
