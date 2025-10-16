@@ -7,7 +7,7 @@ OBJ = ft_display_file.o
 all : $(NAME)
 
 $(NAME) : $(SRC)
-	gcc -c $(SRC)
+	gcc -Wall -Wextra -Werror -c $(SRC)
 	gcc $(OBJ) -o $(NAME)
 
 clean : 

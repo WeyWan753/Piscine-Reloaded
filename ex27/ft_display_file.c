@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_display_file.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wabin-wa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 19:20:49 by wabin-wa          #+#    #+#             */
-/*   Updated: 2025/10/16 19:27:23 by wabin-wa         ###   ########.fr       */
+/*   Updated: 2025/10/16 19:51:57 by wabin-wa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,18 +20,18 @@ void	error(int argc, int fd)
 {
 	if (argc == 1)
 	{
-		write(1, "File name missing.", 18);
-		exit(0);
+		write(2, "File name missing.\n", 19);
+		exit(1);
 	}
 	if (argc > 2)
 	{
-		write(1, "Too many arguments.", 19);
-		exit(0);
+		write(2, "Too many arguments.\n", 20);
+		exit(1);
 	}
 	if (fd == -1)
 	{
-		write(1, "Cannot read file.", 17);
-		exit(0);
+		write(2, "Cannot read file.\n", 18);
+		exit(1);
 	}
 }
 
@@ -42,7 +42,6 @@ int	main(int argc, char **argv)
 	int		readbytes;
 	int		i;
 
-	buf[BUF_SIZE];
 	fd = open(argv[1], O_RDONLY);
 	error(argc, fd);
 	readbytes = read(fd, buf, BUF_SIZE);
@@ -56,4 +55,5 @@ int	main(int argc, char **argv)
 		}
 		readbytes = read(fd, buf, BUF_SIZE);
 	}
+	close(fd);
 }
